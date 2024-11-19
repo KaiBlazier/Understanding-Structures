@@ -1,0 +1,21 @@
+start
+   Declarations
+      string targetWord
+      string currentPageWord
+      string feedback
+   output "Enter the word you want to look up: "
+   input targetWord
+   open dictionary to a random page
+   read currentPageWord
+   while currentPageWord not equal to targetWord
+      if currentPageWord comes before targetWord alphabetically then
+         output "Flip forward"
+         flip forward a few pages
+      else if currentPageWord comes after targetWord alphabetically then
+         output "Flip backward"
+         flip backward a few pages
+      endif
+      read currentPageWord
+   endwhile
+   output "Found the word: ", targetWord
+stop
