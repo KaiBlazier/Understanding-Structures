@@ -1,0 +1,18 @@
+start
+   Declarations
+      num low = 1
+      num high = 100
+      num guess
+      string feedback
+   while feedback not equal to "correct"
+      guess = (low + high) / 2
+      output "Is your number ", guess, "? (Enter 'high', 'low', or 'correct')"
+      input feedback
+      if feedback equal to "high" then
+         high = guess - 1
+      else if feedback equal to "low" then
+         low = guess + 1
+      endif
+   endwhile
+   output "You aren't as dumb as I thought!"
+stop
